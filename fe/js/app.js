@@ -85,10 +85,10 @@
         });
     }
 
-    function deleteByCompleted(completed) {
+    function deleteByCompleted() {
         $.ajax({
             type:'DELETE',
-            url:'./api/todos/completed/{completed}',
+            url:'./api/todos/completed',
             success:function(){
                 $('.completed').remove();
                 countTodo();
@@ -198,9 +198,7 @@
 
 	$('#button_clear-completed').on('click', function() {
         if($('#button_clear-completed').prop('checked') == true) {
-            deleteByCompleted(1);
-        } else {
-            deleteByCompleted(0);
+            deleteByCompleted();
         }
 
 	});
