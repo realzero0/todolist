@@ -1,4 +1,5 @@
 (function (window) {
+	'use strict';
     // 시작 시 불러오는 부분
     $(document).ready(function(){
         $.ajax({
