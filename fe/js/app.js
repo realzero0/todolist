@@ -197,10 +197,7 @@
 	})
 
 	$('#button_clear-completed').on('click', function() {
-        if($('#button_clear-completed').prop('checked') == true) {
-            deleteByCompleted();
-        }
-
+		deleteByCompleted();
 	});
 
 })(window);
